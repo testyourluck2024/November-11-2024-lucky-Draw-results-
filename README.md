@@ -42,16 +42,15 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
+        .winner-message {
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            background-color: #32cd32; /* Lime Green for winner */
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
+            font-weight: bold;
+            margin-top: 20px;
         }
         .message {
             text-align: center;
@@ -87,11 +86,9 @@
         </form>
     </div>
 
-    <!-- Success Message (example after payment confirmation) -->
-    <div class="message">
-        <p><strong>Success! Your ticket has been registered.</strong></p>
-        <p><strong>Your ticket number is: <span id="ticket-id">A107937</span></strong></p>
-        <p>Thank you for participating! The results will be posted on the website. Please check back for updates.</p>
-    </div>
-</body>
-</html>
+    <!-- Winner Message -->
+    <div class="winner-message">
+        <p>🎉 Birth Anniversary Fourth Druk Gyelpo Lucky Draw Winner! 🎉</p>
+        <p><strong>Ticket Number: A107937</strong> has won the Lucky Draw!</p>
+        <p>Congratulations, Kinley Tshering from Trashigang! Thank you for participating! The results have been posted on the website. Please check back for further updates.</p>
+   
