@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -181,6 +181,3 @@
         <p>Thank you for participating!</p>
     </div>
 </div>
-
-</body>
-</html>
