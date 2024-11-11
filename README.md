@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Draw Results - Birth Anniversary Fourth Druk Gyelpo</title>
+    <style>
+        /* Container with background image */
+        .container {
+            background-image: url('path-to-your-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 20px;
+            color: black; /* Default color for text */
+        }
+
+        /* Light overlay for readability */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.5); /* Light overlay */
+            z-index: 1;
+        }
+
+        /* Ensuring content is above the background */
+        .container > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Topic Box */
+        .topic-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 30px auto;
+            font-size: 1.8em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .topic-box span {
+            display: inline-block;
+        }
+
+        .topic-1 {
+            color: red;  /* First part in red */
+        }
+
+        .topic-2 {
+            color: green;  /* Second part in green */
+        }
+
+        .topic-3 {
+            color: blue;  /* Third part in blue */
+        }
+
+        .topic-4 {
+            color: orange;  /* Fourth part in orange */
+        }
+
+        /* Results Heading */
+        h1 {
+            color: red;
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+
+        /* Results Status Box */
+        .results-status {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+
+        /* Winner Status Color */
+        .winner {
+            color: green;
+            font-weight: bold;
+        }
+
+        .no-result {
+            color: darkorange;
+            font-weight: bold;
+        }
+
+        /* Entry Details Box */
+        .entry-details {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1em;
+        }
+
+        /* Static Labels */
+        .entry-details p {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .entry-details .label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Box for Static Entries */
+        .entry-box {
+            background-color: #f9f9f9;
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        /* Thank you Message */
+        .thank-you {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 30px;
+            font-weight: bold;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Topic Box with different colored parts -->
+    <div class="topic-box">
+        <span class="topic-1">69th </span>
+        <span class="topic-2">Birthday Anniversary </span>
+        <span class="topic-3">of the Fourth Druk Gyelpo </span>
+        <span class="topic-4">- Lucky Draw Results</span>
+    </div>
+
+    <!-- Results Heading -->
+    <h1>Birth Anniversary Lucky Draw Results</h1>
+
+    <!-- Results Status Box -->
+    <div class="results-status">
+        <p class="no-result">No results yet. Please check back later!</p>
+    </div>
+
+    <!-- Entry Details Box (Fixed Labels) -->
+    <div class="entry-details">
+        <!-- Ticket Number (Fixed) -->
+        <div class="label">Ticket Number:</div>
+        <div class="entry-box">[Not yet available]</div>
+
+        <!-- Dzongkhag (Fixed) -->
+        <div class="label">Dzongkhag:</div>
+        <div class="entry-box">[Not yet available]</div>
+
+        <!-- Full Name (Fixed) -->
+        <div class="label">Full Name:</div>
+        <div class="entry-box">[Not yet available]</div>
+
+        <!-- Contact Number (Fixed) -->
+        <div class="label">Contact Number:</div>
+        <div class="entry-box">[Not yet available]</div>
+    </div>
+
+    <!-- Thank You Message -->
+    <div class="thank-you">
+        <p>Thank you for participating!</p>
+    </div>
+</div>
+
+</body>
+</html>
