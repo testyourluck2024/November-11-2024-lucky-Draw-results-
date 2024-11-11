@@ -1,183 +1,97 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Draw Results - Birth Anniversary Fourth Druk Gyelpo</title>
+    <title>69th Birth Anniversary Fourth Druk Gyelpo Lucky Draw</title>
     <style>
-        /* Container with background image */
-        .container {
-            background-image: url('path-to-your-image.jpg'); /* Replace with your image URL */
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            padding: 20px;
-            color: black; /* Default color for text */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f9;
         }
-
-        /* Light overlay for readability */
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(255, 255, 255, 0.5); /* Light overlay */
-            z-index: 1;
-        }
-
-        /* Ensuring content is above the background */
-        .container > * {
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Topic Box */
-        .topic-box {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 30px auto;
-            font-size: 1.8em;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .topic-box span {
-            display: inline-block;
-        }
-
-        .topic-1 {
-            color: red;  /* First part in red */
-        }
-
-        .topic-2 {
-            color: green;  /* Second part in green */
-        }
-
-        .topic-3 {
-            color: blue;  /* Third part in blue */
-        }
-
-        .topic-4 {
-            color: orange;  /* Fourth part in orange */
-        }
-
-        /* Results Heading */
         h1 {
-            color: red;
             text-align: center;
-            font-size: 2.5em;
-            margin-top: 30px;
+            font-size: 36px;
+            color: #333;
         }
-
-        /* Results Status Box */
-        .results-status {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 40px;
-            font-size: 1.5em;
+        h1 span {
+            display: inline-block;
+            padding: 5px;
         }
-
-        /* Winner Status Color */
-        .winner {
-            color: green;
-            font-weight: bold;
-        }
-
-        .no-result {
-            color: darkorange;
-            font-weight: bold;
-        }
-
-        /* Entry Details Box */
-        .entry-details {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 40px;
+        .color1 { color: #ff6347; } /* Tomato */
+        .color2 { color: #4682b4; } /* Steel Blue */
+        .color3 { color: #32cd32; } /* Lime Green */
+        .color4 { color: #ffa500; } /* Orange */
+        .form-container {
             max-width: 600px;
             margin: 0 auto;
-            font-size: 1.1em;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        /* Static Labels */
-        .entry-details p {
-            font-weight: bold;
-            margin: 10px 0;
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
         }
-
-        .entry-details .label {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        /* Box for Static Entries */
-        .entry-box {
-            background-color: #f9f9f9;
-            border: 2px solid #ccc;
+        input {
+            width: 100%;
             padding: 10px;
-            margin-bottom: 20px;
-            font-size: 1.1em;
-            text-align: center;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
-
-        /* Thank you Message */
-        .thank-you {
-            text-align: center;
-            font-size: 1.5em;
-            margin-top: 30px;
-            font-weight: bold;
-            color: green;
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-
+        button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
+    <h1>
+        <span class="color1">69th</span>
+        <span class="color2">Birth Anniversary</span>
+        <span class="color3">of the Fourth</span>
+        <span class="color4">Druk Gyelpo Lucky Draw</span>
+    </h1>
+    <p style="text-align: center;">Date: November 11, 2024</p>
+    
+    <div class="form-container">
+        <h2>Ticket Registration</h2>
+        <form action="submit_ticket_details" method="POST">
+            <label for="ticket-number">Ticket Number:</label>
+            <input type="text" id="ticket-number" name="ticket-number" value="A107937" readonly><br><br>
 
-<div class="container">
-    <!-- Topic Box with different colored parts -->
-    <div class="topic-box">
-        <span class="topic-1">69th </span>
-        <span class="topic-2">Birthday Anniversary </span>
-        <span class="topic-3">of the Fourth Druk Gyelpo </span>
-        <span class="topic-4">- Lucky Draw Results</span>
+            <label for="dzongkhag">Dzongkhag:</label>
+            <input type="text" id="dzongkhag" name="dzongkhag" value="Trashigang" readonly><br><br>
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" value="Kinley Tshering" readonly><br><br>
+
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number" value="+97517832***" readonly><br><br>
+        </form>
     </div>
 
-    <!-- Results Heading -->
-    <h1>Birth Anniversary Lucky Draw Results</h1>
-
-    <!-- Results Status Box -->
-    <div class="results-status">
-        <p class="no-result">No results yet. Please check back later!</p>
+    <!-- Success Message (example after payment confirmation) -->
+    <div class="message">
+        <p><strong>Success! Your ticket has been registered.</strong></p>
+        <p><strong>Your ticket number is: <span id="ticket-id">A107937</span></strong></p>
+        <p>Thank you for participating! The results will be posted on the website. Please check back for updates.</p>
     </div>
-
-    <!-- Entry Details Box (Fixed Labels) -->
-    <div class="entry-details">
-        <!-- Ticket Number (Fixed) -->
-        <div class="label">Ticket Number:</div>
-        <div class="entry-box">[Not yet available]</div>
-
-        <!-- Dzongkhag (Fixed) -->
-        <div class="label">Dzongkhag:</div>
-        <div class="entry-box">[Not yet available]</div>
-
-        <!-- Full Name (Fixed) -->
-        <div class="label">Full Name:</div>
-        <div class="entry-box">[Not yet available]</div>
-
-        <!-- Contact Number (Fixed) -->
-        <div class="label">Contact Number:</div>
-        <div class="entry-box">[Not yet available]</div>
-    </div>
-
-    <!-- Thank You Message -->
-    <div class="thank-you">
-        <p>Thank you for participating!</p>
-    </div>
-</div>
+</body>
+</html>
